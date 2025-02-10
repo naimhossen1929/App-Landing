@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,56 @@
     <!-- -------------Tailwind CDN------- -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- -----------favicon----------- -->
-     <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon">
+    <!-- -------Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/cc2435fc76.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header class="bg-[#0E1133]">
-        <nav class="container mx-auto flex justify-between items-center py-6">
-            <div class="flex items-center space-x-8">
-                <div><a href="#"><img class="" src="assets/logo-3.png" alt=""></a></div>
-                <div class="text-white text-[1rem] font-semibold space-x-6">
-                    <a class="hover:text-orange-700 duration-300" href="#">Home</a>
-                    <a class="hover:text-orange-700 duration-300"href="#">About</a>
-                    <a class="hover:text-orange-700 duration-300"href="#">Service</a>
-                    <a class="hover:text-orange-700 duration-300"href="#">Blog</a>
-                    <a class="hover:text-orange-700 duration-300"href="#">Contact</a>
+    <header class="">
+        <section class="bg-[#0E1133]">
+            <nav class="container mx-auto flex justify-between items-center py-6 px-12 md:px-2 lg:px-0 ">
+                <div class="flex items-center space-x-8">
+                    <div><a href="#"><img class="" src="assets/logo-3.png" alt=""></a></div>
+                    <div class="text-white text-[1rem] font-semibold space-x-6 hidden  md:flex ">
+                        <a class="hover:text-orange-700 duration-300" href="#">Home</a>
+                        <a class="hover:text-orange-700 duration-300" href="#">About</a>
+                        <a class="hover:text-orange-700 duration-300" href="#">Service</a>
+                        <a class="hover:text-orange-700 duration-300" href="#">Blog</a>
+                        <a class="hover:text-orange-700 duration-300" href="#">Contact</a>
+                    </div>
                 </div>
+                <div>
+                    <div class="text-white space-x-6 hidden md:flex">
+                        <button
+                            class="cursor-pointer text-[1rem] font-semibold border border-solid border-orange-600 px-2 py-[2px] rounded-sm hover:border-white hover:text-orange-600 duration-300">Login</button>
+                        <button
+                            class="cursor-pointer text-[1rem] font-semibold bg-orange-600 px-2 py-[2px] rounded-sm hover:bg-[#0E1133] duration-300 border border-solid border-orange-600 ">Get
+                            Started</button>
+                    </div>
+                    <div class=" md:hidden lg:hidden">
+                        <img class="w-6 h-6" src="assets/more.png" alt="">
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="bg-[#000B58] text-white text-center">
+
+            <div class="container mx-auto py-6 px-12 md:px-2 lg:px-0 space-y-4 flex flex-col justify-center items-center">
+                <h1 class="text-3xl  lg:text-5xl font-bold lg:leading-15">Creative way to <br> Showcase Your <span
+                    class="text-orange-600">App</span></h1>
+            <p class="text-sm opacity-50">Your app gets maximum attentions and gets more and more downloads</p>
+           <div class="flex">
+            <button
+            class="cursor-pointer text-[1rem] font-semibold border border-solid border-orange-600 px-2 py-[2px] rounded-sm hover:border-white hover:text-orange-600 duration-300">Get
+            a Quote</button>
+        <button
+            class="cursor-pointer text-[1rem] font-semibold bg-orange-600 px-2 py-[2px] rounded-sm hover:bg-[#0E1133] duration-300 border border-solid border-orange-600 ml-3"><i class="fa-solid fa-play"></i>  Play
+            Video</button>
+           </div>
+                <img class="translate-y-20 sm:translate-y-36 md:translate-y-28 lg:translate-y-36 w-fit md:w-1/2" src="assets/hero-thumb-4.png" alt="">
             </div>
-            <div class="text-white space-x-6">
-                <button class="cursor-pointer text-[1rem] font-semibold border border-solid border-orange-600 px-2 py-[2px] rounded-sm hover:border-white hover:text-orange-600 duration-300">Login</button>
-                <button class="cursor-pointer text-[1rem] font-semibold bg-orange-600 px-2 py-[2px] rounded-sm hover:bg-[#0E1133] duration-300 border border-solid border-orange-600 ">Get Started</button>
-            </div>
-        </nav>
+        </section>
     </header>
     <main>
 
@@ -35,4 +66,5 @@
 
     </footer>
 </body>
+
 </html>
